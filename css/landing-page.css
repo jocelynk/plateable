@@ -21,6 +21,12 @@ h6 {
     font-weight: 700;
 }
 
+section {
+    padding-top: 50px;
+    padding-right: 0px;
+    padding-bottom: 50px;
+    padding-left: 0px;
+}
 .topnav {
     font-size: 14px; 
 }
@@ -59,6 +65,47 @@ h6 {
 
 .intro-message > h3 {
     text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+}
+
+.contact-divider {
+    width: 50px;
+    border-color: #3ebfb7;
+    border-width: 3px;
+}
+
+.form-basic {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    font: bold 14px sans-serif;
+    text-align: center;
+}
+
+.form-basic .form-row {
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.form-basic input {
+    color: #5f5f5f;
+    box-sizing: border-box;
+    width: 240px;
+    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+    padding: 12px;
+    border: 1px solid #dbdbdb;
+}
+
+.form-basic button {
+    display: inline-block;
+    border-radius: 10px;
+    background-color: #3ebfb7;
+    color: #ffffff;
+    font-weight: bold;
+    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+    padding: 14px 32px;
+    border: 0;
 }
 
 div.transbox {

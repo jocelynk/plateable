@@ -1,15 +1,11 @@
 var postContactToGoogle  = function() {
     var email = $('#Email').val();
-    var first = $('#First').val();
-    var last = $('#Last').val();
-    var company = $('#Company').val();
 
     $.ajax({
         url: "https://docs.google.com/forms/d/1bs-gXhjOkham619MN4Q37ZOBYZ-rHfhQua5sljtAb7g/formResponse",
-        data: { "entry_1096618039": email,
-            "entry_1470814625": first, "entry_860140424":
-                last, "entry_1321666875": company },
+        data: {"entry_1096618039": email},
         type: "POST",
+        crossDomain: true,
         dataType: "xml",
         contentType: "application/x-www-form-urlencoded; charset=utf-8",
         xhrFields: {
@@ -23,6 +19,7 @@ var postContactToGoogle  = function() {
         statusCode: {
             0: function () {
                 console.log('form failed');
+                $('#thanks').show();
             },
             200: function () {
                 console.log('form succeeded');
